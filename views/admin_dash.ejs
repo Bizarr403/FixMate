@@ -1,0 +1,7 @@
+<%- include('partials/header') %> <% hall.forEach((h) => { %>
+<div>
+  <a href="/viewproblems/<%= h.name %>" class="signuplinks"
+    ><%= h.name %>View Problem</a
+  >
+</div>
+<% })%>

@@ -1,0 +1,10 @@
+<%- include('partials/header') %> <% hall.forEach((h) => { %> <% if (h.type ==
+'M') { %>
+<div class="malehalls">
+  <a href="/halladmin/login/<%= h.name %>" class="halllinks"><%= h.name %></a>
+</div>
+<% } else { %>
+<div class="femalehalls""background-color: lightpink">
+  <a href="/halladmin/login/<%= h.name %>" class="halllinks"><%= h.name %></a>
+</div>
+<% } %> <% }) %>

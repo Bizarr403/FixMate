@@ -1,0 +1,28 @@
+<%- include('partials/header') %>
+<div class="problemform">
+  <form action="/problems" method="post">
+    <h5>Submit Your Problem</h5>
+    <label for="hall">Hall</label><br />
+    <input
+      type="text"
+      name="hall"
+      placeholder="Enter you hall"
+      autocapitalize="on"
+    />
+    <br /><label for="room">Room</label><br />
+    <input type="text" name="room" placeholder="Enter you room" />
+    <br /><label for="category">Category</label><br />
+    <select name="category">
+      <br />
+      <option value="Electrical">Electrical</option>
+      <option value="Carpentry">Carpentry</option>
+      <option value="Aluminium">Aluminium</option>
+      <option value="Plumbing">Plumbing</option>
+      <option value="Other">Other</option></select
+    ><br />
+    <label for="description">Description</label><br />
+    <textarea name="desc" cols="30" rows="10"></textarea><br />
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

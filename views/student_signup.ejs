@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<div class="signupform">
+  <form action="/student/signup" method="post">
+    <a href="/student/signup" class="signuplinks">Student</a>
+    <a href="/halladmin/signup" class="signuplinks">Hall Admin</a><br />
+    <p>Sign Up</p>
+    <label for="name">Full Name</label><br />
+    <input type="text" placeholder="Full Name" name="fname" /><br />
+    <label for="matno">Matric Number</label><br />
+    <input type="text" placeholder="Matric Number" name="matno" /><br />
+    <label for="pasword">Password</label><br />
+    <input type="password" name="password" placeholder="Password" /><br />
+    <button type="submit">Sign Up</button>
+    <p>Already have an account? <a href="/student/login">Log in</a></p>
+  </form>
+</div>

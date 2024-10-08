@@ -1,0 +1,62 @@
+<%- include('partials/header') %>
+<div class="problems">
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Admin Page</title>
+      <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+        }
+        table,
+        th,
+        td {
+          border: 1px solid black;
+        }
+        th,
+        td {
+          padding: 10px;
+          text-align: left;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Problems in Hall</h1>
+
+      <% if (problems.length > 0) { %>
+      <table>
+        <!-- Table Headers -->
+        <thead>
+          <tr>
+            <th>Room</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Date Submitted</th>
+            <th>Student</th>
+          </tr>
+        </thead>
+
+        <!-- Table Body -->
+        <tbody>
+          <% problems.forEach(function(problem) { %>
+          <tr>
+            <td><%= problem.room %></td>
+            <td><%= problem.category %></td>
+            <td><%= problem.description %></td>
+            <td><%= problem.datesubmitted %></td>
+            <td><%= problem.student_id %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+      <% } else { %>
+      <p>No problems found for this hall.</p>
+      <% } %>
+
+      <a href="/print/<%= hall %>" class="printlink">Print</a>
+    </body>
+  </html>
+</div>
