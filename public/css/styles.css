@@ -1,68 +1,102 @@
+:root, :root::before, :root::after{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
 body{
-    background-color: #8739F9;
+    
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
 }
 
 .navigation {
-    background-color: #F9F8FF;
+   
+    text-decoration: none;
     display: flex;
-    width:auto ;
-    height: 100px;
-    border-radius: 30px;
-    position: relative;
-    top: 15px;
-    border: 1px solid #ffffff;
-    justify-content: flex-start;
+    
+    background-color: #3d1579;
+    position: sticky;
+    color: white;
+    align-items: center;
+    padding: 5px 8px;
+    margin-top: 0px;
+   
+    border-radius: 1px;
+}
+h4{
+    color: white;
+    font-family: "Cabin", sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.fa-wrench{color: rgb(65, 65, 219);}
+.linkdiv{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 250px;
+    
+}
+.ctalinks{
+    color: white;
+    text-decoration: none;
+    
+    margin-right: 20px;
+    text-wrap: nowrap;
+   
+}
+.ctalinks:hover{
+    color:#7A84FF;
+}
+.navdiv{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left:300px;
+}
+.navlinks{
+    text-decoration: none;
+    
+     color: white;
+    margin-right: 60px;
+}
+.navlinks:hover{
+    color:#7A84FF;
+}
+.call{
+    
+
+    color: #333333;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     align-items: center;
     
 }
-h4{
-    color: #212121;
-    font-family: "Cabin", sans-serif;
-    font-size: 40px;
-    position: relative;
-    left: 10px;
-
-}.linkdiv{
-    display: flex;
-    position: relative;
-    left: 70%;
-    justify-content:space-between;
-    
-}
-.links{
-    
-    display: inline;
-    font-size: 20px;
-    text-decoration: none;
-    color: #212121;
-    margin-right: 20px;
-   
-}
-.call{
-    background-color: #F8FFF9;
-    width: fit-content;
-    padding: 10px;
-    position: relative;
-    top: 30px;
-    left: 25px;
-    border-radius: 20px;
-}
 .call h1{
-    font-family: "Roboto", sans-serif;
+   
   font-weight: 400;
   font-style: normal;
+  font-size: 35pt;
+  margin-bottom: 0px;
 }
-.call h3{
-    font-family: "Lora", serif;
+.call p{
+    text-wrap: wrap;
+    width: 800px;
+    font-size: 12pt;
 }
-.call a{
+#cta{
     
     text-decoration:none;
     font-size: 1.5rem;
     background-color:#FFFADE ;
-    position: relative;
-    left: 300px; 
-    bottom: 5px;
+    
     border-radius: 20px;
     padding: 10px;
     margin-left: 50px;
@@ -74,18 +108,18 @@ h4{
     border-radius: 20px;    
     width: 300px;
     height: 400px;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left:auto ;
     margin-right:auto ;
     padding: 10px;
     text-align: center;
     display: block;
+    margin-bottom:100px;
 
 }
 .signuplinks{
     text-decoration: none;
     text-align: center;
-    font-family: "Inria Sans", sans-serif;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: opx;
@@ -97,7 +131,7 @@ h4{
     padding: 5px;
 }
 .signupform label{
-    font-family: "Roboto", sans-serif;
+    
     font-size: 15px;
     right: 65px;
     color: #565360;
@@ -152,7 +186,7 @@ h4{
 }
 .problemform button{
     text-align: center;
-    font-family: "Lora", serif;
+    
     width: 280px;
     border: 1px solid #212121;
     margin-left: 20pxpx;
@@ -198,16 +232,15 @@ h4{
     border-radius: 20px;    
     width: 300px;
     height: 500px;
-    margin-top: 100px;
-    margin-left:auto ;
-    margin-right:auto ;
+    
+    margin: 100px auto;
     padding: 10px;
     text-align: center;
     display: block;
 
 }
 .hasignupform label{
-    font-family: "Roboto", sans-serif;
+    
     font-size: 15px;
     right: 65px;
     color: #565360;
@@ -231,7 +264,6 @@ h4{
 }
 .hasignupform button{
     text-align: center;
-    font-family: "Lora", serif;
     width: 280px;
     border: 1px solid #212121;
     margin-left: 20pxpx;
@@ -250,7 +282,6 @@ h4{
 .printlink{
     text-decoration: none;
     text-align: center;
-    font-family: "Inria Sans", sans-serif;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 10px;
@@ -266,7 +297,6 @@ h4{
 .femalehalls .halllinks{
     text-decoration: none;
     text-align: center;
-    font-family: "Inria Sans", sans-serif;
     margin-left: 25px;
     margin-right: 25px;
     margin-top: 10px;
@@ -279,4 +309,19 @@ h4{
     background-color: #7A84FF;
     border-radius: 10px;
     padding: 5px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    
+    background-color: #4c1f91;
+    color:white;
+    padding: 10px;
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    background-color: #3d1579;
+    height: 100px;
 }
